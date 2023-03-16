@@ -35,10 +35,6 @@ while True:
             x, z = item
             print(x, z)
 
-        # listaa = enumerate(lista)
-        # for letra in lista:
-        #     print(letra)
-       
     else:
         print("Valor inválido")
         continue
