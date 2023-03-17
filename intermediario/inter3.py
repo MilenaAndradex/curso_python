@@ -21,10 +21,21 @@ perguntas = [
 
 i=0
 for opcoes in perguntas:
-    # print(perguntas[i] )
     for chave in perguntas[i]:
-        # print(chave, perguntas[i][chave])
-        if chave == 'Opções':
-            print(perguntas[i][chave])
+        if chave == 'Pergunta':
+            print(chave+':', perguntas[i][chave],'\n')
+
+        elif chave == 'Opções':
+            print(chave+':')
+            for l in (perguntas[i][chave]):
+                print(l)
+    
+        elif chave == 'Resposta':
+            op = input("Escolha uma opção: ")
+            if op == (perguntas[i][chave]):
+                print("Acertou :)")
+            else:
+                print("Errou T-T")
+            
     i+=1
 
